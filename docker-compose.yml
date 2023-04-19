@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nextcloud:
+    container_name: nextcloud
+    build: .
+    restart: unless-stopped
+    ports:
+      - 9000
