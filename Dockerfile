@@ -3,7 +3,7 @@ USER root
 RUN apt-get update && apt-get install -y ffmpeg
 
 
-USER www-data
+USER  nobody
 ENV PUID=99
 ENV PGID=100
 
