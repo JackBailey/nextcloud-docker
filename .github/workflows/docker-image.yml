@@ -19,5 +19,7 @@ jobs:
                   docker login -u $DOCKER_USER -p $DOCKER_PASS
             - name: Build the Docker image
               run: docker build . --file Dockerfile --tag jackbailey/nextcloud:fpm-ffmpeg
+            - name: Build the Docker image
+              run: docker build . --file Dockerfile-unRAID --tag jackbailey/nextcloud:fpm-ffmpeg-unraid
             - name: Docker Push
               run: docker push jackbailey/nextcloud --all-tags
