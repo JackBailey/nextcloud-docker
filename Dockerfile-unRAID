@@ -1,5 +1,1 @@
-FROM nextcloud:27.0.0-fpm
-USER root
-RUN apt-get update && apt-get install -y ffmpeg
-
-USER 99:100
+FROM lscr.io/linuxserver/nextcloud:26.0.2
